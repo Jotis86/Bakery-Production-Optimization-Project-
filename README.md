@@ -119,6 +119,10 @@ An interactive dashboard was created in Power BI to analyze the results of the p
 - **Notebooks**: Includes notebooks for loading and merging dataframes, EDA, and model development.
 - **Power BI Dashboard**: Folder with the interactive dashboard created in Power BI.
 - **Project Summary**: Folder with the project presentation in PowerPoint and PDF formats.
+- **Images**: Contains images used in the project documentation.
 
 ## 📬 Contact
-For any inquiries, you can contact me at jotaduranbon@gmail.com
+For any inquiries, feel free to reach out to me through the following channels:
+
+📧 **Email**: [jotaduranbon@gmail.com](mailto:jotaduranbon@gmail.com)  
+💼 **LinkedIn**: [Juan Duran Bon](https://www.linkedin.com/in/juan-duran-bon)
