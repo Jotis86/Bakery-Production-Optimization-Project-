@@ -2,11 +2,11 @@
 
 ![Bakery Image](images/Bakery_2.png)
 
-![Commits](https://img.shields.io/github/commit-activity/m/Jotis86/Fake-News-Detection-with-Machine-Learning)
-![Issues Abiertas](https://img.shields.io/github/issues/Jotis86/Fake-News-Detection-with-Machine-Learning)
-![Pull Requests](https://img.shields.io/github/issues-pr/Jotis86/Fake-News-Detection-with-Machine-Learning)
-![Forks](https://img.shields.io/github/forks/Jotis86/Fake-News-Detection-with-Machine-Learning)
-![Tamaño del Repositorio](https://img.shields.io/github/repo-size/Jotis86/Fake-News-Detection-with-Machine-Learning)
+![Commits](https://img.shields.io/github/commit-activity/m/Jotis86/Bakery-Production-Optimization-Project)
+![Issues Abiertas](https://img.shields.io/github/issues/Jotis86/Bakery-Production-Optimization-Project)
+![Pull Requests](https://img.shields.io/github/issues-pr/Jotis86/Bakery-Production-Optimization-Project)
+![Forks](https://img.shields.io/github/forks/Jotis86/Bakery-Production-Optimization-Project)
+![Tamaño del Repositorio](https://img.shields.io/github/repo-size/Jotis86/Bakery-Production-Optimization-Project)
 
 ## 🎯 Objectives
 The primary objective of this project is to develop a machine learning model to predict the optimal production quantities in a bakery. This aims to minimize waste, reduce financial losses, conserve resources, and lower the environmental footprint. The project addresses the following key issues:
