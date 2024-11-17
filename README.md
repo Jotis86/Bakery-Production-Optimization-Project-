@@ -1,6 +1,6 @@
 # 🥖 Bakery Production Optimization Project 🍞
 
-![Bakery Image](images/Bakery.png)
+![Bakery Image](images/Bakery_2.png)
 
 ![Commits](https://img.shields.io/github/commit-activity/m/Jotis86/Fake-News-Detection-with-Machine-Learning)
 ![Issues Abiertas](https://img.shields.io/github/issues/Jotis86/Fake-News-Detection-with-Machine-Learning)
