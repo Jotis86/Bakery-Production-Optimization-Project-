@@ -7,8 +7,8 @@
 ![Pull Requests](https://img.shields.io/github/issues-pr/Jotis86/Bakery-Production-Optimization-Project-)
 ![Forks](https://img.shields.io/github/forks/Jotis86/Bakery-Production-Optimization-Project-)
 ![Tamaño del Repositorio](https://img.shields.io/github/repo-size/Jotis86/Bakery-Production-Optimization-Project-)
-![Autor](https://img.shields.io/badge/autor-Jotis86-blue)
-![Licencia](https://img.shields.io/github/license/Jotis86/Bakery-Production-Optimization-Project)
+![Autor](https://img.shields.io/badge/autor-Juan%20Duran%20Bon-blue)
+![Licencia](https://img.shields.io/github/license/Jotis86/Bakery-Production-Optimization-Project-)
 
 ## 🎯 Objectives
 The primary objective of this project is to develop a machine learning model to predict the optimal production quantities in a bakery. This aims to minimize waste, reduce financial losses, conserve resources, and lower the environmental footprint. The project addresses the following key issues:
