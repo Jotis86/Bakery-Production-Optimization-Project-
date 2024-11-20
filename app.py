@@ -15,6 +15,22 @@ if menu == "Inicio":
     st.title("🥖 Bakery Production Optimization Project 🍞")
     st.markdown("""
     ¡Bienvenido a la aplicación del proyecto de optimización de producción de panadería! Esta aplicación proporciona una visión general del proyecto, incluyendo objetivos, metodología, herramientas usadas, resultados y más.
+
+    ### Sobre el Proyecto
+    La producción en una panadería puede ser un desafío debido a la naturaleza perecedera de los productos y la variabilidad en la demanda. Este proyecto tiene como objetivo desarrollar un modelo de aprendizaje automático que ayude a predecir las cantidades óptimas de producción, minimizando el desperdicio y mejorando la eficiencia.
+
+    ### Problemas Abordados
+    - **Pérdidas Financieras**: Los productos no vendidos generan pérdidas significativas.
+    - **Desperdicio de Recursos**: La producción ineficiente resulta en ingredientes y mano de obra desperdiciados.
+    - **Impacto Ambiental**: La producción excesiva contribuye a una mayor huella ambiental.
+
+    ### Beneficios Esperados
+    - **Reducción de Pérdidas**: Minimizar las pérdidas financieras al ajustar la producción a la demanda real.
+    - **Eficiencia Operativa**: Mejorar la eficiencia en el uso de recursos y la planificación de la producción.
+    - **Sostenibilidad**: Reducir el impacto ambiental al disminuir el desperdicio de productos.
+
+    ### Estructura de la Aplicación
+    Utiliza el menú de la izquierda para navegar por las diferentes secciones del proyecto, donde encontrarás detalles sobre los objetivos, la metodología, las herramientas utilizadas, los resultados obtenidos, las visualizaciones generadas y el dashboard interactivo de Power BI.
     """)
 
 # Objetivos y Metodología
@@ -68,11 +84,28 @@ elif menu == "Visualizaciones y Modelos":
     st.markdown("""
     ### 📊 Visualizaciones
     Las visualizaciones generadas en el proyecto incluyen:
+    """)
 
-    - **Tendencias de ventas por día de la semana 📅**: Visualización de las tendencias de ventas a lo largo de la semana.
-    - **Correlación entre variables 📈**: Visualización de las correlaciones entre diferentes variables del conjunto de datos.
-    - **Agrupación de productos por familias 🍞**: Visualización de la agrupación de productos en diferentes familias.
+    # Checkboxes para seleccionar los gráficos
+    ventas_hora = st.checkbox("Tendencias de ventas por hora del día 🕒")
+    ventas_dia = st.checkbox("Tendencias de ventas por día de la semana 📅")
+    cantidad_mes = st.checkbox("Cantidad vendida por mes 📆")
+    merma_ano_familia = st.checkbox("Merma por año y familia 📉")
+    merma_familia = st.checkbox("Merma por familia 🍞")
 
+    # Mostrar gráficos seleccionados
+    if ventas_hora:
+        st.image("images/Sales by Hour.png", caption="Tendencias de ventas por hora del día 🕒")
+    if ventas_dia:
+        st.image("images/Sales by day week.png", caption="Tendencias de ventas por día de la semana 📅")
+    if cantidad_mes:
+        st.image("images/Total mounth.png", caption="Cantidad vendida por mes 📆")
+    if merma_ano_familia:
+        st.image("images/Merma by family and year.png", caption="Merma por año y familia 📉")
+    if merma_familia:
+        st.image("images/Merma by family.png", caption="Merma por familia 🍞")
+
+    st.markdown("""
     ### 🧠 Modelos y Métricas
     #### Modelo 1: Basado en Familias de Productos y Días de la Semana
     - **Modelos Usados**: Regresión Lineal, Árbol de Decisión, Bosque Aleatorio, Gradient Boosting
