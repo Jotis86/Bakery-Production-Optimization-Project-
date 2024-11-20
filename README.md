@@ -123,6 +123,11 @@ An interactive dashboard was created in Power BI to analyze the results of the p
 - **Project Summary**: Folder with the project presentation in PowerPoint and PDF formats.
 - **Images**: Contains images used in the project documentation.
 
+## 🌐 Web Application
+You can access the web application for this project using the following link:
+[Web Application](https://npmrbdjxgvy8fhxqpa4con.streamlit.app/)
+
+
 ## 📬 Contact
 For any inquiries, feel free to reach out to me through the following channels:
 
