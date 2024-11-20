@@ -1,132 +1,137 @@
 import streamlit as st
 
-# Configuración de la página
+# Page configuration
 st.set_page_config(page_title="Bakery Production Optimization Project", page_icon="🥖", layout="wide")
 
 # Sidebar
-st.sidebar.title("Menú")
-menu = st.sidebar.radio("Navegación", ["Inicio", "Objetivos y Metodología", "Herramientas y Resultados", "Visualizaciones y Modelos", "Power BI Dashboard"])
+st.sidebar.title("Menu")
+menu = st.sidebar.radio("Navigation", ["Home", "Objectives and Methodology", "Tools and Results", "Visualizations and Models", "Power BI Dashboard"])
 
-# Imagen siempre visible
+# Always visible image
 st.image("images/Bakery_2.png")
 
-# Inicio
-if menu == "Inicio":
+# Home
+if menu == "Home":
     st.title("🥖 Bakery Production Optimization Project 🍞")
     st.markdown("""
-    ¡Bienvenido a la aplicación del proyecto de optimización de producción de panadería! Esta aplicación proporciona una visión general del proyecto, incluyendo objetivos, metodología, herramientas usadas, resultados y más.
+    Welcome to the Bakery Production Optimization Project application! This application provides an overview of the project, including objectives, methodology, tools used, results, and more.
 
-    ### Sobre el Proyecto
-    La producción en una panadería puede ser un desafío debido a la naturaleza perecedera de los productos y la variabilidad en la demanda. Este proyecto tiene como objetivo desarrollar un modelo de aprendizaje automático que ayude a predecir las cantidades óptimas de producción, minimizando el desperdicio y mejorando la eficiencia.
+    ### About the Project
+    Production in a bakery can be challenging due to the perishable nature of the products and variability in demand. This project aims to develop a machine learning model to help predict optimal production quantities, minimizing waste and improving efficiency.
 
-    ### Problemas Abordados
-    - **Pérdidas Financieras**: Los productos no vendidos generan pérdidas significativas.
-    - **Desperdicio de Recursos**: La producción ineficiente resulta en ingredientes y mano de obra desperdiciados.
-    - **Impacto Ambiental**: La producción excesiva contribuye a una mayor huella ambiental.
+    ### Issues Addressed
+    - **Financial Losses**: Unsold products generate significant losses.
+    - **Resource Waste**: Inefficient production results in wasted ingredients and labor.
+    - **Environmental Impact**: Excess production contributes to a larger environmental footprint.
 
-    ### Beneficios Esperados
-    - **Reducción de Pérdidas**: Minimizar las pérdidas financieras al ajustar la producción a la demanda real.
-    - **Eficiencia Operativa**: Mejorar la eficiencia en el uso de recursos y la planificación de la producción.
-    - **Sostenibilidad**: Reducir el impacto ambiental al disminuir el desperdicio de productos.
+    ### Expected Benefits
+    - **Reduction of Losses**: Minimize financial losses by adjusting production to actual demand.
+    - **Operational Efficiency**: Improve resource use efficiency and production planning.
+    - **Sustainability**: Reduce environmental impact by decreasing product waste.
 
-    ### Estructura de la Aplicación
-    Utiliza el menú de la izquierda para navegar por las diferentes secciones del proyecto, donde encontrarás detalles sobre los objetivos, la metodología, las herramientas utilizadas, los resultados obtenidos, las visualizaciones generadas y el dashboard interactivo de Power BI.
+    ### Application Structure
+    Use the menu on the left to navigate through the different sections of the project, where you will find details about the objectives, methodology, tools used, results obtained, visualizations generated, and the interactive Power BI dashboard.
     """)
 
-# Objetivos y Metodología
-elif menu == "Objetivos y Metodología":
-    st.title("🎯 Objetivos y ⚙️ Metodología")
+    # GitHub repository button
+    if st.button('View on GitHub'):
+        st.markdown("[GitHub Repository](https://github.com/Jotis86/Bakery-Production-Optimization-Project-)")
+
+
+# Objectives and Methodology
+elif menu == "Objectives and Methodology":
+    st.title("🎯 Objectives and ⚙️ Methodology")
     st.markdown("""
-    ### 🎯 Objetivos
-    El objetivo principal de este proyecto es desarrollar un modelo de aprendizaje automático para predecir las cantidades óptimas de producción en una panadería. Esto tiene como objetivo minimizar el desperdicio, reducir las pérdidas financieras, conservar recursos y disminuir la huella ambiental. El proyecto aborda los siguientes problemas clave:
-    - **Pérdidas Financieras**: Los productos no utilizados generan pérdidas financieras significativas.
-    - **Desperdicio de Recursos**: La producción ineficiente resulta en ingredientes y mano de obra desperdiciados.
-    - **Impacto Ambiental**: La producción excesiva contribuye a una mayor huella ambiental.
+    ### 🎯 Objectives
+    The primary objective of this project is to develop a machine learning model to predict the optimal production quantities in a bakery. This aims to minimize waste, reduce financial losses, conserve resources, and lower the environmental footprint. The project addresses the following key issues:
+    - **Financial Losses**: Unused products lead to significant financial losses.
+    - **Resource Waste**: Inefficient production results in wasted ingredients and labor.
+    - **Environmental Impact**: Excess production contributes to a larger environmental footprint.
 
-    Al aprovechar los datos históricos de ventas, producción y demanda, el proyecto busca crear un modelo predictivo que pueda pronosticar con precisión las necesidades de producción, optimizando así las operaciones de la panadería.
+    By leveraging historical sales, production, and demand data, the project seeks to create a predictive model that can accurately forecast production needs, thereby optimizing the bakery's operations.
 
-    ### ⚙️ Metodología
-    La metodología seguida en este proyecto incluye los siguientes pasos:
+    ### ⚙️ Methodology
+    The methodology followed in this project includes the following steps:
 
-    - **📥 Carga y limpieza de datos**: Se cargan los datos históricos de ventas, producción y demanda, y se realiza una limpieza de datos para asegurar su calidad.
-    - **🔍 Análisis exploratorio de datos (EDA)**: Se visualizan las distribuciones y relaciones entre variables para entender mejor el conjunto de datos.
-    - **🛠️ Preprocesamiento de datos**: Se estandarizan los datos numéricos y se codifican las variables categóricas para preparar los datos para el entrenamiento del modelo.
-    - **🧠 Desarrollo y evaluación de modelos de aprendizaje automático**: Se desarrollan y evalúan varios modelos de aprendizaje automático para predecir las cantidades óptimas de producción.
-    - **📊 Generación de visualizaciones**: Se generan visualizaciones para interpretar los resultados y facilitar la toma de decisiones.
-    - **🔮 Predicción de cantidades óptimas de producción**: Se utilizan los modelos entrenados para predecir las cantidades óptimas de producción.
+    - **📥 Data Loading and Cleaning**: Historical sales, production, and demand data are loaded and cleaned to ensure data quality.
+    - **🔍 Exploratory Data Analysis (EDA)**: Distributions and relationships between variables are visualized to better understand the dataset.
+    - **🛠️ Data Preprocessing**: Numerical data is standardized and categorical variables are encoded to prepare the data for model training.
+    - **🧠 Model Development and Evaluation**: Several machine learning models are developed and evaluated to predict optimal production quantities.
+    - **📊 Visualization Generation**: Visualizations are generated to interpret the results and facilitate decision-making.
+    - **🔮 Prediction of Optimal Production Quantities**: The trained models are used to predict optimal production quantities.
     """)
 
-# Herramientas y Resultados
-elif menu == "Herramientas y Resultados":
-    st.title("🛠️ Herramientas y 📊 Resultados")
+# Tools and Results
+elif menu == "Tools and Results":
+    st.title("🛠️ Tools and 📊 Results")
     st.markdown("""
-    ### 🛠️ Herramientas Usadas
-    Las herramientas utilizadas en este proyecto incluyen:
+    ### 🛠️ Tools Used
+    The tools used in this project include:
 
-    - **Python 🐍**: Lenguaje de programación principal utilizado para el desarrollo del proyecto.
-    - **Pandas 🐼**: Biblioteca utilizada para la manipulación y análisis de datos.
-    - **Matplotlib 📉 y Seaborn 🐟**: Bibliotecas utilizadas para la visualización de datos.
-    - **Scikit-learn 🤖**: Biblioteca utilizada para el preprocesamiento de datos y el desarrollo de modelos de aprendizaje automático.
-    - **Power BI 📊**: Herramienta utilizada para crear dashboards interactivos.
+    - **Python 🐍**: Main programming language used for project development.
+    - **Pandas 🐼**: Library used for data manipulation and analysis.
+    - **Matplotlib 📉 and Seaborn 🐟**: Libraries used for data visualization.
+    - **Scikit-learn 🤖**: Library used for data preprocessing and machine learning model development.
+    - **Power BI 📊**: Tool used to create interactive dashboards.
 
-    ### 📊 Resultados
-    Los resultados del proyecto mostraron una reducción significativa en los productos no vendidos, minimizando las pérdidas y mejorando la eficiencia de la producción. Los modelos desarrollados permitieron predecir con precisión las cantidades óptimas de producción, lo que resultó en una mejor planificación y gestión de los recursos.
+    ### 📊 Results
+    The project results showed a significant reduction in unsold products, minimizing losses and improving production efficiency. The developed models allowed for accurate prediction of optimal production quantities, resulting in better planning and resource management.
 
-    #### Principales Resultados:
-    - **Reducción de Pérdidas**: Se logró una reducción significativa en los productos no vendidos, lo que minimizó las pérdidas financieras.
-    - **Mejora en la Eficiencia de Producción**: La producción se optimizó, resultando en un uso más eficiente de los recursos y una menor huella ambiental.
-    - **Predicciones Precisas**: Los modelos desarrollados permitieron predecir con precisión las necesidades de producción, facilitando la toma de decisiones y la planificación de la producción.
+    #### Key Results:
+    - **Reduction of Losses**: A significant reduction in unsold products was achieved, minimizing financial losses.
+    - **Improvement in Production Efficiency**: Production was optimized, resulting in more efficient use of resources and a smaller environmental footprint.
+    - **Accurate Predictions**: The developed models allowed for accurate prediction of production needs, facilitating decision-making and production planning.
     """)
 
-# Visualizaciones y Modelos
-elif menu == "Visualizaciones y Modelos":
-    st.title("📊 Visualizaciones y 🧠 Modelos")
+# Visualizations and Models
+elif menu == "Visualizations and Models":
+    st.title("📊 Visualizations and 🧠 Models")
     st.markdown("""
-    ### 📊 Visualizaciones
-    Las visualizaciones generadas en el proyecto incluyen:
+    ### 📊 Visualizations
+    The visualizations generated in the project include:
     """)
 
-    # Checkboxes para seleccionar los gráficos
-    ventas_hora = st.checkbox("Tendencias de ventas por hora del día 🕒")
-    ventas_dia = st.checkbox("Tendencias de ventas por día de la semana 📅")
-    cantidad_mes = st.checkbox("Cantidad vendida por mes 📆")
-    merma_ano_familia = st.checkbox("Merma por año y familia 📉")
-    merma_familia = st.checkbox("Merma por familia 🍞")
+    # Checkboxes to select the graphs
+    sales_hour = st.checkbox("Sales trends by hour of the day 🕒")
+    sales_day = st.checkbox("Sales trends by day of the week 📅")
+    sales_month = st.checkbox("Quantity sold by month 📆")
+    waste_year_family = st.checkbox("Waste by year and family 📉")
+    waste_family = st.checkbox("Waste by family 🍞")
 
-    # Mostrar gráficos seleccionados
-    if ventas_hora:
-        st.image("images/Sales by Hour.png", caption="Tendencias de ventas por hora del día 🕒")
-    if ventas_dia:
-        st.image("images/Sales by day week.png", caption="Tendencias de ventas por día de la semana 📅")
-    if cantidad_mes:
-        st.image("images/Total mounth.png", caption="Cantidad vendida por mes 📆")
-    if merma_ano_familia:
-        st.image("images/Merma by family and year.png", caption="Merma por año y familia 📉")
-    if merma_familia:
-        st.image("images/Merma by family.png", caption="Merma por familia 🍞")
+    # Show selected graphs
+    if sales_hour:
+        st.image("images/Sales by Hour.png", caption="Sales trends by hour of the day 🕒")
+    if sales_day:
+        st.image("images/Sales by day week.png", caption="Sales trends by day of the week 📅")
+    if sales_month:
+        st.image("images/Total mounth.png", caption="Quantity sold by month 📆")
+    if waste_year_family:
+        st.image("images/Merma by family and year.png", caption="Waste by year and family 📉")
+    if waste_family:
+        st.image("images/Merma by family.png", caption="Waste by family 🍞")
 
     st.markdown("""
-    ### 🧠 Modelos y Métricas
-    #### Modelo 1: Basado en Familias de Productos y Días de la Semana
-    - **Modelos Usados**: Regresión Lineal, Árbol de Decisión, Bosque Aleatorio, Gradient Boosting
-    - **Métricas de Evaluación**: Error Cuadrático Medio (MSE), Error Absoluto Medio (MAE), Raíz del Error Cuadrático Medio (RMSE), R-cuadrado (R2)
+    ### 🧠 Models and Metrics
+    #### Model 1: Based on Product Families and Days of the Week
+    - **Models Used**: Linear Regression, Decision Tree, Random Forest, Gradient Boosting
+    - **Evaluation Metrics**: Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), R-squared (R2)
 
-    #### Modelo 2: Basado en Productos Individuales y Días de la Semana
-    - **Modelo Usado**: Bosque Aleatorio
-    - **Métricas de Evaluación**: Error Cuadrático Medio (MSE), Error Absoluto Medio (MAE), Raíz del Error Cuadrático Medio (RMSE), R-cuadrado (R2)
+    #### Model 2: Based on Individual Products and Days of the Week
+    - **Model Used**: Random Forest
+    - **Evaluation Metrics**: Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), R-squared (R2)
     """)
 
 # Power BI Dashboard
 elif menu == "Power BI Dashboard":
     st.title("📊 Power BI Dashboard")
     st.markdown("""
-    Se creó un dashboard interactivo en Power BI para analizar los resultados de los modelos predictivos y compararlos con los pedidos realizados por el gerente. Este dashboard permite una comparación gráfica de las predicciones del modelo con los datos de pedidos reales, facilitando la toma de decisiones y la planificación de la producción.
+    An interactive dashboard was created in Power BI to analyze the results of the predictive models and compare them with the orders placed by the manager. This dashboard allows for graphical comparison of the model predictions with actual order data, facilitating decision-making and production planning.
 
-    ### Características del Dashboard:
-    - **Comparación de Predicciones y Pedidos Reales**: Gráficos que muestran las diferencias entre las cantidades predichas por los modelos y las cantidades realmente ordenadas por el gerente.
-    - **Análisis de Tendencias**: Visualización de tendencias de ventas y producción a lo largo del tiempo.
-    - **Interactividad**: Filtros y segmentadores que permiten a los usuarios explorar los datos dinámicamente y personalizar su vista.
+    ### Dashboard Features:
+    - **Comparison of Predictions and Actual Orders**: Charts showing the differences between the quantities predicted by the models and the quantities actually ordered by the manager.
+    - **Trend Analysis**: Visualization of sales and production trends over time.
+    - **Interactivity**: Filters and slicers that allow users to explore the data dynamically and customize their view.
     """)
     st.image("images/Powerbi.png")
 
-# Ejecutar la aplicación con: streamlit run app.py
+# Run the application with: streamlit run app.py
