@@ -7,6 +7,10 @@ st.set_page_config(page_title="Bakery Production Optimization Project", page_ico
 st.sidebar.title("Menu")
 menu = st.sidebar.radio("Navigation", ["Home", "Objectives and Methodology", "Tools and Results", "Visualizations and Models", "Power BI Dashboard"])
 
+# GitHub repository button in the sidebar
+if st.sidebar.button('View on GitHub'):
+    st.sidebar.markdown("[GitHub Repository](https://github.com/Jotis86/Bakery-Production-Optimization-Project)")
+
 # Always visible image
 st.image("images/Bakery_2.png")
 
@@ -32,10 +36,6 @@ if menu == "Home":
     ### Application Structure
     Use the menu on the left to navigate through the different sections of the project, where you will find details about the objectives, methodology, tools used, results obtained, visualizations generated, and the interactive Power BI dashboard.
     """)
-
-    # GitHub repository button
-    if st.button('View on GitHub'):
-        st.markdown("[GitHub Repository](https://github.com/Jotis86/Bakery-Production-Optimization-Project-)")
 
 
 # Objectives and Methodology
