@@ -9,7 +9,7 @@ menu = st.sidebar.radio("Navigation", ["Home", "Objectives and Methodology", "To
 
 # GitHub repository button in the sidebar
 if st.sidebar.button('View on GitHub'):
-    st.sidebar.markdown("[GitHub Repository](https://github.com/Jotis86/Bakery-Production-Optimization-Project)")
+    st.sidebar.markdown("[GitHub Repository](https://github.com/Jotis86/Bakery-Production-Optimization-Project-)")
 
 # Always visible image
 st.image("images/Bakery_2.png")
